@@ -7,16 +7,18 @@ public class Main {
         int kalan = 3;
         int select;
         int balance = 1500;
+        //Kullanıcı giriş
         System.out.print("Kullanıcı Adı: ");
         username = input.nextLine();
         System.out.print("Parolanız: ");
         password = input.nextLine();
+        //while döngü
         while (true) {
             System.out.print("Kullanıcı Adı: ");
             username = input.nextLine();
             System.out.print("Parolanız: ");
             password = input.nextLine();
-
+        //menü seçimleri
             if (username.equals("patika") && password.equals("dev123")) {
                 System.out.println("Sisteme Giriş Yaptınız!");
                     System.out.println("1-Para yatırma\n" +
@@ -52,10 +54,11 @@ public class Main {
                         default:
                             System.out.println("Hatalı Giriş!");
                     }
-
+                //çıkış durumunda
                 if (select == 4) {
                     break;
                 }
+                //Hatalı Giriş
             } else {
                 kalan--;
                 System.out.println("Hatalı kullanıcı adı veya şifre. Tekrar deneyiniz.");
